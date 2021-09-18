@@ -9,7 +9,7 @@ A minimal component for dynamic generating HTML Tags
 
 2) Use it in this way
 
-```csharp
+```html
 <DynamicTag Tag="span" class="alert alert-primary" title="hello">
 	hello <strong>!!!</strong>
 </DynamicTag>
@@ -17,7 +17,7 @@ A minimal component for dynamic generating HTML Tags
 
 The DynamicTag will render
 
-```csharp
+```html
 <span class="alert alert-primary" title="hello">
 	hello <strong>!!!</strong>
 </span>
