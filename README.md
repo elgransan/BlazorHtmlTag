@@ -1,4 +1,4 @@
-# Blazor DynamicTag 
+# Blazor HtmlTag 
 A minimal component for dynamic generating HTML Tags
 
 - In development
@@ -11,17 +11,17 @@ A minimal component for dynamic generating HTML Tags
 
 #### Usage:
 
-1) Add DynamicTag project or only the DynamicTag.razor.cs file
+1) Add HtmlTag project or only the HtmlTag.razor.cs file
 
 2) Use it in this way
 
 ```html
-<DynamicTag Tag="span" class="alert alert-primary" title="hello">
+<HtmlTag Tag="span" class="alert alert-primary" title="hello">
 	hello <strong>!!!</strong>
-</DynamicTag>
+</HtmlTag>
 ```
 
-The DynamicTag will render
+The HtmlTag will render
 
 ```html
 <span class="alert alert-primary" title="hello">
