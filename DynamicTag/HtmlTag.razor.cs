@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Rendering;
+using Microsoft.AspNetCore.Components.Web;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace DynamicTag
 {
-    public class DynamicTag : ComponentBase
+    public class HtmlTag : ComponentBase
     {
         [Parameter]
         public string Tag { get; set; } = "div";

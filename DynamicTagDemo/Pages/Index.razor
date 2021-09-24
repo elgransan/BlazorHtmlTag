@@ -6,6 +6,18 @@ Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 
-<HtmlTag Tag="span" class="alert alert-primary" title="hello">
-	hello <strong>!!!</strong>
+<HtmlTag Tag="span" class="alert alert-primary" 
+    style="cursor: pointer; user-select: none;" title="hello" 
+    @onclick="IncrementCount">
+	<strong>Current count:</strong> @currentCount
 </HtmlTag>
+
+@code
+{
+	private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
