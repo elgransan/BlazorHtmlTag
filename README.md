@@ -5,7 +5,7 @@ A minimal component for dynamic generating HTML Tags
 
 Install-Package BlazorDynamicTag
 
-[![NuGet version (BlazorDynamicTag)](https://img.shields.io/nuget/v/BlazorDynamicTag.svg?style=flat-square)](https://github.com/elgransan/BlazorHtmlTag)
+[![NuGet version (BlazorDynamicTag)](https://img.shields.io/nuget/v/BlazorDynamicTag.svg?style=flat-square)](https://www.nuget.org/packages/BlazorDynamicTag/)
 
 
 ## Use Cases
