@@ -1,7 +1,12 @@
 # Blazor HtmlTag 
 A minimal component for dynamic generating HTML Tags
 
-- In development
+## Installation Nuget Package
+
+Install-Package BlazorDynamicTag
+
+[![NuGet version (BlazorDynamicTag)](https://img.shields.io/nuget/v/BlazorDynamicTag.svg?style=flat-square)](https://github.com/elgransan/BlazorHtmlTag)
+
 
 ## Use Cases
 
@@ -11,7 +16,11 @@ A minimal component for dynamic generating HTML Tags
 
 #### Usage:
 
-1) Add HtmlTag project or only the HtmlTag.razor.cs file
+1) Add BlazorDynamicTag to your _Imports.razor
+
+```csharp
+@using BlazorDynamicTag
+```
 
 2) Use it in this way
 

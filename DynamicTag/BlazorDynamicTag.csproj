@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <IsPublishable>True</IsPublishable>
+    <Authors>Santiago Cattaneo</Authors>
+    <Description>A minimal Blazor component for dynamic generating HTML Tags</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/elgransan/BlazorHtmlTag</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>blazor;htmltag;dynamictag</PackageTags>
+    <PackageReleaseNotes>Initial version</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.9" />
+  </ItemGroup>
+
+</Project>

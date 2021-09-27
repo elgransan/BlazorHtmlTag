@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Components.Web;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace DynamicTag
+namespace BlazorDynamicTag
 {
     public class HtmlTag : ComponentBase
     {
