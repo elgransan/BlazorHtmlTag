@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+# Blazor HtmlTag 
+A minimal component for dynamic generating HTML Tags
 
-You can use the [editor on GitHub](https://github.com/elgransan/BlazorHtmlTag/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Installation Nuget Package
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Install-Package BlazorDynamicTag
 
-### Markdown
+[![NuGet version (BlazorDynamicTag)](https://img.shields.io/nuget/v/BlazorDynamicTag.svg?style=flat-square)](https://www.nuget.org/packages/BlazorDynamicTag/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## Use Cases
 
-# Header 1
-## Header 2
-### Header 3
+* In general, when you create a Blazor Component but you want the user selects the base tag for the component.
+* For instance, A draggable comonent could have a "div" as base tag, but the user wants to be a list "ul" or "ol"
+* Or if you have a css layout and an extra "div" on a component makes the css styles break out
 
-- Bulleted
-- List
+#### Usage:
 
-1. Numbered
-2. List
+1) Add BlazorDynamicTag to your _Imports.razor
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```csharp
+@using BlazorDynamicTag
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+2) Use it in this way
 
-### Jekyll Themes
+```html
+<HtmlTag Tag="span" class="alert alert-primary" title="hello">
+	hello <strong>!!!</strong>
+</HtmlTag>
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/elgransan/BlazorHtmlTag/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+The HtmlTag will render
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```html
+<span class="alert alert-primary" title="hello">
+	hello <strong>!!!</strong>
+</span>
+```
