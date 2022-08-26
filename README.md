@@ -12,6 +12,7 @@ Install-Package BlazorDynamicTag
 
 * In general, when you create a Blazor Component but you want the user selects the base tag for the component.
 * For instance, A draggable comonent could have a "div" as base tag, but the user wants to be a list "ul" or "ol"
+* Or if you want dynamic headers <h1> <h2> <h3> 
 * Or if you have a css layout and an extra "div" on a component makes the css styles break out
 
 #### Usage:
